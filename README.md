@@ -2,6 +2,11 @@
 
 A new Flutter project.
 
+Fetch an online image and load into Network Image widget.
+The image fetch link is updated on clicking refresh and a new image appears on button click.
+
+![Alt text](https://github.com/TejeshwarReddy/Flutter_ImageLoader/blob/master/sample_preview.jpg?raw=true "Sample Image")
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
