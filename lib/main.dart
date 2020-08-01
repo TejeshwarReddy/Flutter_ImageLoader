@@ -20,26 +20,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // constructor
-  _MyHomePageState() : super() {
-    print(
-        ">>>>>>>>>>>>>>>>>>>>>>>>>   _MyHomePageState being created. Constructor called.");
-  }
-  // int _counter = 0;
+  _MyHomePageState() : super();
   final r = new Random();
 
   String url = "https://picsum.photos/id/1/200/300";
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   print(">>>>>>>>>>>>>>>>>>>>>>>>>   _MyHomePageState initState() called.");
-  //   _counter = 0;
-  // }
-
   @override
   Widget build(BuildContext context) {
-    print(">>>>>>>>>>>>>>>>>>>>>>>>>   _MyHomePageState build() called!");
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -66,8 +53,6 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          print(
-              ">>>>>>>>>>>>>>>>>>>>>>>>>   'Floating Blue' button pressed. Function setState() called.");
           setState(() {
             url = "https://picsum.photos/id/" +
                 r.nextInt(100).toString() +
